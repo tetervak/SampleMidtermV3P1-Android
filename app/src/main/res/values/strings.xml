@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Sample Midterm V3 P1</string>
+
+    <!-- input/output labels -->
+    <string name="breed_label">Breed</string>
+    <string name="hair_label">Hair</string>
+
+    <!-- button labels -->
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+
+    <!-- default text input -->
+    <string name="cat_breed">Cat Breed</string>
+
+    <!-- default output -->
+    <string name="undefined">Undefined</string>
+
+    <!-- validation error -->
+    <string name="required">required</string>
+
+</resources>
