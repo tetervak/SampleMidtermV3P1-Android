@@ -13,16 +13,12 @@ class OutputActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         val binding = ActivityOutputBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val breedInfo = intent.getSerializableExtra(BREED_INFO) as BreedInfo
+        binding.breedInfo = intent.getSerializableExtra(BREED_INFO) as BreedInfo
 
-        with(binding){
-            breedOutput.text = breedInfo.breedName
-            hairOutput.text = breedInfo.hairLength
-
-            backButton.setOnClickListener { finish() }
-        }
+        binding.backButton.setOnClickListener { finish() }
     }
 }
